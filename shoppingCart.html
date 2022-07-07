@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 생성</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        border: 1px solid green;
+    }
+    #last td{
+        border: 1px solid green;
+    }
+</style>
+<body>
+<table align="right" style="border: hidden;">
+    <tr>
+        <td><a href="">Login</a>&nbsp;&nbsp;<a href="">SignUp</a></td>
+    </tr>
+    
+</table>
+<br><br><br>
+<table align="center">
+    <tr>
+        <td style="width: 60px;"></td>
+        <td>
+            <a style="font-size: xx-large;font-weight: 700;align-self: center;">장바구니</a>
+            
+        </td>
+        <td style="width: 60px;text-align: right;">
+            
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="padding-left: 680px; border: hidden;">
+            <input type="button" value="Random" style="width: 80px; height: 40px;">
+        </td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td>
+            <table style="width: 600px;">
+                <tr style="border: 1px solid green;">
+                    <td>
+                        가게명
+                    </td>
+                    <td align="right" colspan="2"><input type="button" value="X"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">메뉴명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                    </td>
+                    <td style="text-align:center;">가  격 :</td>
+                    <td colspan=><input type="number" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">
+                        칼로리:
+                    </td>
+                    <td colspan="2">
+                        <input type="number" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="-"><input type="text" value="20" style="width: 15px; text-align: center;" readonly><input type="button" value="+">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table style="width: 600px;">
+                <tr style="border: 1px solid green;">
+                    <td>
+                        가게명
+                    </td>
+                    <td align="right" colspan="2"><input type="button" value="X"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">메뉴명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                    </td>
+                    <td style="text-align:center;">가  격 :</td>
+                    <td colspan=><input type="number" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">
+                        칼로리:
+                    </td>
+                    <td colspan="2">
+                        <input type="number" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="-"><input type="text" value="20" style="width: 15px; text-align: center;" readonly><input type="button" value="+">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table style="width: 600px;">
+                <tr style="border: 1px solid green;">
+                    <td>
+                        가게명
+                    </td>
+                    <td align="right" colspan="2"><input type="button" value="X"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">메뉴명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                    </td>
+                    <td style="text-align:center;">가  격 :</td>
+                    <td colspan=><input type="number" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">
+                        칼로리:
+                    </td>
+                    <td colspan="2">
+                        <input type="number" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="-"><input type="text" value="20" style="width: 15px; text-align: center;" readonly><input type="button" value="+">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table style="width: 600px;">
+                <tr style="border: 1px solid green;">
+                    <td>
+                        가게명
+                    </td>
+                    <td align="right" colspan="2"><input type="button" value="X"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">메뉴명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                    </td>
+                    <td style="text-align:center;">가  격 :</td>
+                    <td colspan=><input type="number" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">
+                        칼로리:
+                    </td>
+                    <td colspan="2">
+                        <input type="number" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="-"><input type="text" value="20" style="width: 15px; text-align: center;" readonly><input type="button" value="+">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table id="last" style="width: 600px;">
+                <tr>
+                    <td style="width: 300px;text-align: right;font-weight: 500;font-size: x-large;">배달 주문하기&nbsp;&nbsp;</td>
+                    <td>총 가격: <input type="text" style="width: 60px;"></td>
+                    <td>총 칼로리: <input type="text" style="width: 60px;"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

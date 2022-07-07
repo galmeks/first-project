@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 생성</title>
+</head>
+<body align="right">
+    <a href="">Login</a>&nbsp;&nbsp;<a href="">SignUp</a>
+    <h1 align="center">주문하기</h1>
+    <table align="center">
+        <tr>
+            <td style="text-align: left;vertical-align: top;">
+                배달정보:
+            </td>
+            <td>
+                <textarea type="text" id="address" style="width: 300px;height: 45px;" name="address" placeholder="주소를 적어주세요"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="number" style="width: 300px;" id="mobile" placeholder="-를 빼고 전화번호를 적어주세요">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left; vertical-align: top;">
+                요청사항:
+            </td>
+            <td>
+                <textarea style="width: 302px;height: 45px;" id="req" name="req"></textarea>
+            </td>
+        </tr>
+    </table>
+    <hr style="width: 500px;">
+    <br>
+    <table align="center">
+        <tr>
+            <td style="font-size: larger;">
+                배달팁:
+            </td>
+            <td>
+                <input type="number" id="tip" value="3000" readonly> 
+            </td>
+        </tr>
+        <tr><td style="height: 20px;"></td></tr>
+        <tr>
+            <td style="font-size: larger;">
+                총 결제금액:
+            </td>
+            <td>
+                <input type="number" id="sum" value="25000" readonly> 
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr style="width: 500px;">
+    <table align="center">
+        <tr>
+            <td>
+                <input type="button" style="width: 250px;height: 40px;" value="28000원 결제하기">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

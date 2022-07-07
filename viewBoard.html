@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 보기</title>
+</head>
+<body>
+    <h1>게시판</h1>
+    <table>
+        <tr>
+            <td>제목:</td>
+            <td><input type="text" id="title" name="title" style="width: 410px;"></td>
+            <td><input type="button" value="수정" id="bteUpdate"><input type="button" value="삭제" id="btnDel"></td>
+        </tr>
+        <tr>
+            <td>작성자</td><td>누구세용</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <textarea id="content" style="width: 500px;height: 400px;"></textarea>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <textarea id="comment" style="width: 460px;height: 35px;"></textarea>
+            </td>
+            <td>
+                <input type="button" id="btnDat" value="댓글작성" style="height: 40px;width: 80px;">
+            </td>
+        </tr>
+    </table>
+    <table>
+        <h4>댓글</h4>
+        <tr>
+            <td id="content" style="width: 465px;height: 35px;">세상에 이게 댓글인가</td><td><input type="button" value="대댓글" style="height: 40px;width: 80px;"></td>
+        </tr>
+        <tr style="display: none;">
+            <td><textarea id="reply" style="width: 460px;height: 35px;"></textarea></td>
+            <td><input type="button" value="대댓글 달기" style="height: 40px;width: 80px;"></td>
+        </tr>
+    </table>
+</body>
+</html>
