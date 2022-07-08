@@ -128,7 +128,7 @@ textarea{
 .container{
     padding-left: 21%;
 }
-.container > .shop_name{
+.shop_name > h2 {
     text-align: left;
 }
 div[class="container"]>table{
@@ -140,9 +140,6 @@ div[class="container"]>table{
     position: absolute;
     top: 20%; right: 12%;
 }
-/* .container > .shoppingback > .shopping > th,tr{
-    text-align: right;
-} */
 
 /* 오른쪽 사이드바 테이블 리뷰 */
 h2{
@@ -155,11 +152,11 @@ div[class="sidebar"] > table{
     border-collapse: collapse;
     color: #eee;
 }
-.sidebar > table > tr {
+tr {
     border: 1px solid #eee;
     text-align: center;
 }
-.sidebar > table > th{
+th{
     position: sticky;
 }
 
