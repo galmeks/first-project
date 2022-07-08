@@ -10,7 +10,11 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="login">
+            <a href="#">로그인</a>&nbsp;
+            <a href="#">로그아웃</a>
+        </div>
+        <div class="lo">
             <ul class="navi">
                 <li class="logo">
                     <a>
@@ -20,11 +24,10 @@
             </ul>
         </div>
     </header>
-
+    <!-- 왼쪽 사이드바 -->
     <div class="left_sidebar">
         <div class="icon-status">
-            
-            <div>✈</div>
+            <div>🍕🍔</div>
         </div>
 
         <!-- nav.menu-box>ul>li*4>a[href="#"] -->
@@ -37,7 +40,7 @@
             </ul>
         </nav>
     </div>
-
+    <!-- 본문 -->
     <div class="container">
         <div class="shop_name">
             <h2><img>가게명</h2>
@@ -54,7 +57,21 @@
                 </td>
             </tr>
         </table>
+        <div class="shoppingback">
+            <table class="shopping">
+                <th colspan="2" align="center"><h3>장바구니</h3></th>
+                <tr>
+                    <td>메뉴</td>
+                    <td><select size="10" style="width: 300px;"></select></td>
+                </tr>
+                <tr>
+                    <td>가격</td>
+                    <td><input type="number">원</td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <!-- 오른쪽 사이드바 -->
     <input type="checkbox" id="menuicon">
     <label for="menuicon">
         <span></span>
@@ -77,6 +94,8 @@
                 <td>내용</td>
             </tr>
        </table>
+       <label for="menuicon"></label>
     </div>
+    <label for="menuicon" class="background"></label>
 </body>
 </html>
