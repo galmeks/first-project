@@ -7,11 +7,11 @@ input[id="menuicon"]{
 /* 체크박스에 모양 만들기 */
 input[id="menuicon"]+label{
     display: block;
-    width: 50px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     position:fixed;
     right: 10px;;
-    top:calc(50% - 25px);
+    bottom:calc(5% - 25px);
     transition: all .35s;
     cursor: pointer;
 }
@@ -64,40 +64,52 @@ div[class="sidebar"]{
     position: fixed; /* 사이드바 고정(스크롤 안되게) */
     top: 0;
     right: -500px; /* 사이드바 안보일때 숨기기위해 */
-    z-index: 1; /* 사이드바 체크박스 보이게 하기 위해 */
+    z-index: 5; /* 사이드바 체크박스 보이게 하기 위해 */
     transition: all .35s;
+}
+
+/* 사이드바 버튼 외 눌럿을때 들어가게 하기 */
+.sidebar label[for*='menuicon']{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    transition: all .35s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
 }
 
 /* 사이드바 눌렀을때 나오게 하기 */
 input[id="menuicon"]:checked+label+div{
     right:0;
 }
-
-/* 사이드바 테이블 리뷰 */
-h2{
-    text-align: center;
-    color: #eee;
-}
-div[class="sidebar"]>table{
-    width: 500px;
-    height: 100px;
-    border-collapse: collapse;
-    color: #eee;
-}
-tr{
-    border: 1px solid #eee;
-    text-align: center;
-}
-th{
-    position: sticky;
+input#menuicon:checked ~ .background{
+    opacity: 1;
+    visibility: visible;
 }
 
 /* 헤더 */
+.login{
+    padding-top: 1%;
+    padding-right: 1%;
+    text-align: right;
+}
 header{
     width: 100%;
     background-color: rgba(92,207,223,0.856);
 }
-header>div{
+header > .lo{
     position: relative;
     width: 1200px;
     margin: 0 auto;
@@ -110,18 +122,42 @@ ul{
 .se{
     text-align: left;
 }
-
-
 textarea{
     width: 250px;
 }
 .container{
     padding-left: 21%;
 }
+.shop_name > h2 {
+    text-align: left;
+}
 div[class="container"]>table{
     width: 800px;
     height: 100px;
     border-collapse: collapse;
+}
+.container > .shoppingback{
+    position: absolute;
+    top: 20%; right: 12%;
+}
+
+/* 오른쪽 사이드바 테이블 리뷰 */
+h2{
+    text-align: center;
+    color: #eee;
+}
+div[class="sidebar"] > table{
+    width: 500px;
+    height: 100px;
+    border-collapse: collapse;
+    color: #eee;
+}
+tr {
+    border: 1px solid #eee;
+    text-align: center;
+}
+th{
+    position: sticky;
 }
 
 /* 왼쪽사이드바 */
